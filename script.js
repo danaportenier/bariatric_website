@@ -61,4 +61,3 @@ demographics_submit.addEventListener("submit", function () {
   console.log(`Age is ${age}`);
   //preventDefaultAction();
 });
-// test
