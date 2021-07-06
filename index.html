@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Portenier Bariatric Note Generator</title>
+  </head>
+<main>
+  
+    <body>
+    <h1>Portenier Bariatric Note Generator</h1>
+    <div class="main_container"></div>
+    <form name="demographics" action="">
+        <fieldset class="demographics">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" autofocus 
+        placeholder="Age" required min="10" max="115"> <br>
+        
+        <label for="height_feet">Height (Feet): </label>
+        <input type="text" id="height_feet" name="height_feet" placeholder="feet"><br>
+
+        <label for="height_inches">Height (Inches): </label>
+        <input type="text" id="height_inches" name="height_inches" placeholder="inches"><br>
+
+        <label for="weight_lbs">Weight (lbs): </label>
+        <input type="text" id="weight_lbs" name="weight_lbs" placeholder="lbs"><br><br>
+<div class="gender">
+        
+    <p class="gender">Gender: </p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    <div class="male_female">
+        <label for="male" >Male</label>&nbsp
+        <input type="radio" id="male" name="gender" value="Male">&nbsp
+        <label for="female">Female</label>&nbsp
+        <input type="radio" id="female" name="gender" value="Female"><br><br>
+    </div>
+    </div>
+    
+<br>
+<div class="prev_bari_button">
+        <label for="previous_bari_button">Previous Bariatric Surgery: </label>&nbsp &nbsp &nbsp 
+        <label for="yes_prev_bari_button">Yes</label>&nbsp
+        <input type="radio" class="prev_bari_button_input" id="yes_prev_bari_button" name="previous_bari_button" value="yes">&nbsp
+        <label for="no_prev_bari_button">No</label>&nbsp
+        <input type="radio" class="prev_bari_button_input" id="no_prev_bari_button" name="previous_bari_button" value="no" checked><br>
+      
+      </div>
+      <br>
+<div class="prev_rev">
+        <label for="previous_rev">Previous Revision Surgery: </label>&nbsp &nbsp &nbsp &nbsp 
+        <label for="yes_prev_rev">Yes</label>&nbsp
+        <input type="radio" id="yes_prev_rev" name="previous_rev" value="yes">&nbsp
+        <label for="no_prev_rev">No</label>&nbsp
+        <input type="radio" id="no_prev_rev" name="previous_rev" value="no"><br>
+      </div>
+      <button class="demographics_button">Submit</button>
+      </fieldset>
+
+
+
+
+    </form>
+    <p class="note"></p>
+    
+    <form action="" name="previous_surgery" class="previous_surgery">
+      <fieldset class="previous_surgery_fieldset">
+      
+      <!-- Primary Surgery Type -->
+      <label for="primary_surgery">What Primary Bariatric Surgery?</label>
+      <input list ="primary_surgery_types" id="primary_surgery"></input>
+      <datalist name="primary_surgery" id="primary_surgery_types">
+        <option value="Sleeve Gastrectomy">Sleeve Gastrectomy</option>
+        <option value="Roux-en-y Gastric Bypass">Roux-en-y Gastric Bypass</option>
+        <option value="Duodenal Switch">Duodenal Switch</option>
+        <option value="Loop Duodenal Switch">Loop Duodenal Switch</option>
+        <option value="Lap Band">Lap Band</option>
+        <option value="Lap Band with Plication">Lap Band with Plication</option>
+        <option value="Gastric Plication">Gastric Plication</option>
+        <option value="Gastric Balloon">Gastric Balloon</option>
+        <option value="Mini Gastric Bypass">Mini Gastric Bypass</option>
+        <option value="Jejunal-Ileal Bypass">Jejunal-Ileal Bypass</option>
+        <option value="Verticle Banded Gastroplasty">Verticle Banded Gastroplasty</option>
+        <option value="Stomach Stapling">Stomach Stapling</option>
+      </datalist><br>
+      
+      <!--How was Primary Preformed-->
+      <label for="how_preformed">How was the Primary Surgery Preformed?</label>
+      <select name="how_preformed" id="how_preformed">
+        <option value="Laparoscopic">Laparoscopic</option>
+        <option value="Robotic">Robotic</option>
+        <option value="Single Incision">Single Incision</option>
+        <option value="Laparoscopic Converted to Open">Laparoscopic Converted to Open</option>
+        <option value="Open">Open</option>
+        <option value="Endoscopic">Endoscopic</option>
+      </select><br>
+      
+      
+      <!--Date Primary Surgery-->
+      <label for="date_primary">Date of Primary Bariatric Surgery?</label>
+      <input type="month" id="date_primary" name="date_primary"><br>
+
+      <!--Name of Primary Surgeon-->
+      <label for="name_primary_surgeon">Surgeon who Preformed Primary Surgery</label>
+      <input type="text" id="name_primary_surgeon" name="name_primary_surgeon"><br>
+
+      <!--Location of Primary Surgery-->
+      <label for="location_primary_surgery">Location of Primary Surgery</label>
+      <input type="text" id="location_primary_surgery" name="location_primary_surgery" placeholder="Hospital, City, State"><br>
+
+      <!--Complication of Primary Surgery-->
+      <label for="complication_primary_surgery">Complications of Primary Surgery</label>
+      <textarea id="complication_primary_surgery" name="complication_primary_surgery" rows="4" cols="50">
+        </textarea>
+        <br>
+
+        <!--Preop Weight-->
+        <label for="preop_primary_wt">Preop Weight (lbs):</label>
+        <input type="text" id="preop_primary_wt" name="preop_primary_wt" placeholder="preop weight (lbs)"> <br>
+
+        <!--Nadir Weight Primary Surgery-->
+        <label for="nadir_primary_wt">Nadir Weight (lbs):</label>
+        <input type="text" id="nadir_primary_wt" name="nadir_primary_wt" placeholder="nadir weight (lbs)"> <br>
+
+
+    </form>
+  </fieldset>
+    <script src="script.js"></script>
+</div>
+  </body>
+</main>
+</html>

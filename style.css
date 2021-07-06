@@ -1,0 +1,83 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #012169;
+  color: #e2e6ed;
+  margin: 0px;
+  padding: 0px;
+}
+p {
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px black;
+  margin-top: 2rem;
+}
+label {
+  cursor: pointer;
+}
+
+input[type="text"]:hover {
+  border-color: #f3f2f1;
+  border-width: 1px;
+}
+.note {
+  border: 1px;
+}
+.main_container {
+  display: flex;
+}
+.demographics {
+  display: inline-block;
+  flex-direction: row;
+  border: 1px solid;
+  max-width: fit-content;
+  line-height: 2rem;
+  margin: 1em;
+  padding: 5px;
+}
+.previous_surgery {
+  display: none;
+  flex-direction: row;
+  border: 1px solid;
+  max-width: fit-content;
+  line-height: 2rem;
+  margin: 1em;
+  padding: 5px;
+}
+.demographics label {
+  text-decoration: underline;
+  text-align: right;
+  float: left;
+  font-size: 1em;
+}
+.demographics input {
+  text-align: left;
+  float: right;
+}
+.gender {
+  display: inline-flex;
+}
+.gender p {
+  text-decoration: underline;
+}
+.gender label {
+  text-decoration: none;
+}
+.male_female {
+  display: inline-flex;
+}
+
+.prev_bari_button {
+  display: inline-flex;
+}
+
+.prev_rev {
+  display: inline-flex;
+}
+fieldset {
+  border: none;
+}
